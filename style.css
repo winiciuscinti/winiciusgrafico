@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+:root {
+    --bg-color: #f7f7f7; /* Fundo cinza muito claro */
+    --primary-color: #4f4f4f; /* Cinza escuro */
+    --secondary-color: #333333; /* Cinza ainda mais escuro para textos */
+    --accent-color: #9e9e9e; /* Cinza médio para detalhes */
+    --font: "Open Sans", sans-serif; /* Tipografia limpa e moderna */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+    font-family: var(--font);
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin: 0 2rem;
+    font-size: 1.5rem;
+    transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+    transform: scale(1.05);
+}
+
+.grafico {
+    margin-top: 3rem;
+}
+
+#graficos-container {
+    margin: 5rem;
+}
+
+.graficos-container__texto {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    border: 3px dashed var(--accent-color);
+    background-color: rgba(79, 79, 79, 0.1); /* Fundo levemente transparente com cinza escuro */
+}
+
+span {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
